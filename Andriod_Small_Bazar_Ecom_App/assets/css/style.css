@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  body {
+    text-align: center;
+    background-color: #dad5d5;
+  }
+
+  /* Style for header with logo */
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #dad5d5;
+  }
+
+  /* Style for title header */
+  .title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+  }
+
+  /* Style for tagline */
+  .tagline {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+  }
+  
+  /* Style for image gallery */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .gallery img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .gallery img:active {
+    transform: scale(0.9);
+  }
+  .image p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+  }
+
+
+  /* Style for floating social media icons making them smaller */
+  .social {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .social img, .download img {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  .social img:hover, .download img:hover, .download p:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  /* Floating google play icon on the left */
+  .download {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 200px;
+  }
+
+  /* style for footer  */
+  .footer {
+    font-weight: bold;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
